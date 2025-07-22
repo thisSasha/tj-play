@@ -1,4 +1,2 @@
-getter/main.build
-getter/main.dist/*
-!getter/main.dist/
-!getter/main.dist/main.bin
+getter/*
+client/*
