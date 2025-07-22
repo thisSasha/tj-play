@@ -1,6 +1,7 @@
 import requests
 import os
-import shutil
+import zipfile
+import io
 import sys
 from PySide6.QtWidgets import QApplication, QFileDialog
 
@@ -45,66 +46,52 @@ def download_file(url, dest_path):
     except Exception as e:
         print(f'Ошибка загрузки {url}: {e}')
 
+GITHUB_BASE = 'https://raw.githubusercontent.com/thisSasha/tj-play/main/'  # поправьте на свой URL
+
 def update_client():
     gamepath = get_path('игры')
+    # Папки mods и resourcepacks
     modpath = os.path.join(gamepath, 'mods')
-    if not os.path.exists(modpath):
-        os.makedirs(modpath)
+    respath = os.path.join(gamepath, 'resourcepacks')
+    os.makedirs(modpath, exist_ok=True)
+    os.makedirs(respath, exist_ok=True)
 
-    # Resourcepacks
+    # Скачиваем и распаковываем mods.zip
+    print('Получение архива модов...')
+    mods_zip_url = GITHUB_BASE + 'mods.zip'
+    resp = requests.get(mods_zip_url, stream=True)
+    resp.raise_for_status()
+    with zipfile.ZipFile(io.BytesIO(resp.content)) as z:
+        print(f'Распаковка модов в {modpath}...')
+        z.extractall(path=modpath)
+
+    # Ресурспаки по выбору
     isResoursePacks = input('Получить все рекомендуемые ресурс паки? (y/n): ')
-    if isResoursePacks.lower() == 'y':
-        print('Получение пакетов ресурсов...')
-        respath = os.path.join(gamepath, 'resourcepacks')
-        if not os.path.exists(respath):
-            os.makedirs(respath)
-        
-        filelist_url = GITHUB_BASE + 'resourcepacks/.filelist'
-        lines = requests.get(filelist_url).text.splitlines()
-        
-        for line in lines:
-            line = line.strip()
-            if line:
-                url = GITHUB_BASE + f'resourcepacks/{line}'
-                dest = os.path.join(respath, line)
-                download_file(url, dest)
+    if isResoursePacks.strip().lower() == 'y':
+        print('Получение архива ресурс-паков...')
+        res_zip_url = GITHUB_BASE + 'resourcepacks.zip'
+        resp = requests.get(res_zip_url, stream=True)
+        resp.raise_for_status()
+        with zipfile.ZipFile(io.BytesIO(resp.content)) as z:
+            print(f'Распаковка ресурс-паков в {respath}...')
+            z.extractall(path=respath)
 
-    print('Получение модов...')
-    modlist_url = GITHUB_BASE + 'mods/.filelist'
-    lines = requests.get(modlist_url).text.splitlines()
-    expected_files = []
-
-    for line in lines:
-        line = line.strip()
-        if line:
-            expected_files.append(line)
-            url = GITHUB_BASE + f'mods/{line}'
-            dest = os.path.join(modpath, line)
-            download_file(url, dest)
-
-    # Удаляем лишние моды
-    for filename in os.listdir(modpath):
-        if filename not in expected_files:
-            os.remove(os.path.join(modpath, filename))
-            print(f'Удалён лишний мод: {filename}')
-
-    # Options
+    # Настройки по выбору
     isOptions = input('Установить рекомендуемые настройки? (y/n): ')
-    if isOptions.lower() == 'y':
-        print('Получение настроек...')
+    if isOptions.strip().lower() == 'y':
+        print('Получение options.txt...')
         options_url = GITHUB_BASE + 'options.txt'
         optionspath = os.path.join(gamepath, 'options.txt')
         try:
             content = requests.get(options_url).text
-            with open(optionspath, 'w', encoding='utf-8') as file:
-                file.write(content)
+            with open(optionspath, 'w', encoding='utf-8') as f:
+                f.write(content)
             print(f'Настройки сохранены в {optionspath}')
         except Exception as e:
             print(f'Ошибка загрузки настроек: {e}')
 
-    print('Обновление завершено')
+    print('Обновление завершено.')
     print('Приятной игры!')
-
 
 print('Получение последней версии...')
 if not os.path.exists("VERSION"):
