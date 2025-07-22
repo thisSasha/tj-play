@@ -1,0 +1,16 @@
+filename = 'gazebo-1.1.1+1.20.1.jar'
+name = 'Gazebos (RPG Series)'
+side = 'server'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '2abfd61675de3c0703528939f87ff8511432b283de2381955b6feac99a486e4d6fd361987264319262a07cea4edea50f485d628a844bb5b5ef38f553c8e6986a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/XIpMGI6r/versions/7OXOb67d/gazebo-1.1.1%2B1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'XIpMGI6r'
+version = '7OXOb67d'

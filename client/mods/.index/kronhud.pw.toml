@@ -1,0 +1,16 @@
+filename = 'KronHUD-1.20.1-2.2.6.jar'
+name = 'KronHUD'
+side = 'client'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'd511a59d0958b1466a98f382debdd3378828fcc7423bf37858e0e067ed1a94b9a9381d4be560fa24837fc7bbb96dab5fc763626c082dd3bec984a89370a92618'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/uDMPYwAN/versions/5EGwK9ZF/KronHUD-1.20.1-2.2.6.jar'
+
+[update.modrinth]
+mod-id = 'uDMPYwAN'
+version = '5EGwK9ZF'

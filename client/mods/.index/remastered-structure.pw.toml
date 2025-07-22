@@ -1,0 +1,16 @@
+filename = 'Fantastic Remastered Structures 1.20+1.20.6-0.5 For+fab.jar'
+name = 'Fantastic Remastered Structure'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6', '1.21' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '553ea7bdfa66c0dc5d8f5545b54769406bcd53d4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5597594
+project-id = 972044

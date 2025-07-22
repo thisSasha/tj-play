@@ -1,0 +1,16 @@
+filename = 'wardentools-2.5.0+mc1.20.1.jar'
+name = 'Warden Tools'
+side = 'both'
+x-prismlauncher-loaders = [ 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '17cdc1c8c2e3c12725ed1ce8d5acdc67088f18c17badc58d8b20fa5ebc54ad01e9e489aaacc7b29e80ea4019328e1ad4d7f79e7d3f5982a2dd14b12115a5ee53'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/KuQueJOG/versions/xirQaXbP/wardentools-2.5.0%2Bmc1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'KuQueJOG'
+version = 'xirQaXbP'

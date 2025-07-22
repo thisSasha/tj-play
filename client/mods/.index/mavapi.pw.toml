@@ -1,0 +1,16 @@
+filename = 'mavapi-1.1.4-mc1.20.1.jar'
+name = 'More Axolotl Variants API'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.4' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '9943fb6a7aa1d98a9ef9bdc7488a2a1f5532b095ae0c292031c440e909df04746a8e43d17812e600faf534f11564a769cb103d8ab6562eddc40f163368492a38'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/t4Ybtys2/versions/DwZgKHDi/mavapi-1.1.4-mc1.20.1.jar'
+
+[update.modrinth]
+mod-id = 't4Ybtys2'
+version = 'DwZgKHDi'

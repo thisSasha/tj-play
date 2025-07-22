@@ -1,0 +1,16 @@
+filename = 'berserker-class-mod-1.2.3-1.20.1.jar'
+name = 'Berserker (More RPG Classes)'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '20ce7ba84a4d89539800707ef88a7f6c3b44ac6704a432908aed76665298d7a21a4d0d077244f41de8e7feafa8266ae0a67ebc3245699511119f1ed490769c6b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/8hqOZzxM/versions/Bqegppli/berserker-class-mod-1.2.3-1.20.1.jar'
+
+[update.modrinth]
+mod-id = '8hqOZzxM'
+version = 'Bqegppli'

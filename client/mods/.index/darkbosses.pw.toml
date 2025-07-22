@@ -1,0 +1,16 @@
+filename = 'darkbosses-fabric-1.20.1-1.0.4.jar'
+name = 'DarkBosses - RPG Bosses Advancements'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '268e8c9038b6bcb4a46de9161e0b1fd7211ccc1d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5416984
+project-id = 933719

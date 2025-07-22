@@ -1,0 +1,16 @@
+filename = 'raccoons-rabies-2.1.1.jar'
+name = 'Raccoons & Rabies'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'e38e2d4ba82fc414fc252710bb46a508847d06f65531baae0af094747b272ec10d1adbde0b7a519ef2371551f2438b58a1c70c06b3dabdc19be475503bc72772'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/45m4jAcu/versions/BRwyoMUG/raccoons-rabies-2.1.1.jar'
+
+[update.modrinth]
+mod-id = '45m4jAcu'
+version = 'BRwyoMUG'

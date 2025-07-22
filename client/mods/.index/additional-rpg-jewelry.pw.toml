@@ -1,0 +1,16 @@
+filename = 'additional_rpg_jewelry-1.1.0-1.20.1.jar'
+name = 'Additional Jewelry'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '2ea29d5b8ffbcc760cca95e522822d700b1df22294f3dc162ec03080680821fa2b449931ab2ef4569978f4c1b32e3360c65874b93d2a23801ce882ad7a3b316d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rULzJh3O/versions/poWy8FSE/additional_rpg_jewelry-1.1.0-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'rULzJh3O'
+version = 'poWy8FSE'

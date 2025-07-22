@@ -1,0 +1,16 @@
+filename = 'throw-items-mc1.20.1-1.0.0.jar'
+name = 'Throw Items'
+side = 'client'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '304d77d84f0f53fb39362fb3b18115bc8ba2d210b1499b34a5cd2e0de7b1b72fb0718e24009839db9beef7098b33d5155d95d2241af7b6ed7ed8b51127539f05'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Cfxh9QjG/versions/F9f8cXJQ/throw-items-mc1.20.1-1.0.0.jar'
+
+[update.modrinth]
+mod-id = 'Cfxh9QjG'
+version = 'F9f8cXJQ'

@@ -1,0 +1,16 @@
+filename = 'happy_ghast-3.0.0-fabric-1.20.1.jar'
+name = 'Happy Ghast [FORGE/FABRIC]'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '2778744565f8dabaabb70ef8d30eb8fb824e01e78071ec1def21801521d5edddecf1f3fb7c8edf8cceee4c1e31d983f66ff52bc1e5d0affea02c127ef6dc7c67'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/H25juIDM/versions/qMqYqxsh/happy_ghast-3.0.0-fabric-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'H25juIDM'
+version = 'qMqYqxsh'

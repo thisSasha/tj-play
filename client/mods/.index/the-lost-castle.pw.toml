@@ -1,0 +1,16 @@
+filename = 'tlc-fabric-1.20.X-1.2.0-eyeSpy.jar'
+name = 'The Lost Castle'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '89dd6610799468bd068d20a92ecc42c4bd41619c2724db0c5e71a37bc81dd609268b04a2d47d7bec4f89c4fae9c0b94c0b2c6c03ed0f224d8680e88db79ad1a8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/FGlHZl7X/versions/9B9A85bd/tlc-fabric-1.20.X-1.2.0-eyeSpy.jar'
+
+[update.modrinth]
+mod-id = 'FGlHZl7X'
+version = '9B9A85bd'

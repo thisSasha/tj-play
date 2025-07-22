@@ -1,0 +1,16 @@
+filename = 'DarkKore-0.3.5-1.20.1.jar'
+name = 'DarkKore'
+side = 'client'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '77e37f1833d165b0c9a12c5572472d60a21ed218e017e74c555e012c460b59accc00a4dd72f90edb8bb571193258b8ef2a05081c1029b36e8dd06e45dd72030a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/mB8GNQWO/versions/P1lp3NGn/DarkKore-0.3.5-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'mB8GNQWO'
+version = 'P1lp3NGn'
